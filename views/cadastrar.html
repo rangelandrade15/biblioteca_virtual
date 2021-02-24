@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Livros</title>
+</head>
+<style>
+    .bg{
+        background-image: url("livros-stack-realistic_1284-4735.jpg");
+    }
+</style>
+<body class="bg">
+    <center>
+        <h1>Biblioteca Virtual</h1>
+        <p>Cadastre seus Livros!</p>
+          <fieldset style="width: 500px;">
+    <form action="/cadastrar" method="POST">
+        <p>Titulo do Livro</p>
+        <input type="text" name="titulo" required>
+        <p>Edição</p>
+        <input type="text" name="edicao" required>
+        <p>Autor</p>
+        <input type="text" name="autor" required>
+        <p>Editora</p>
+        <input type="text" name="editora" required><br><br>
+        <button type="submit">Cadastrar</button>
+    </form>
+</fieldset>
+<a href="/visualizar">Listar</a>
+
+</center>
+<center>
+    <p>Pesquise aqui o seu livro favorito!</p>
+      <fieldset style="width: 500px;">
+<form action="/pesquisar" method="POST">
+    <p>Titulo do Livro</p>
+    <input type="text" name="titulo">
+    <button type="submit">Pesquisar</button>
+</form>
+</fieldset>
+</center>
+</body>
+</html>

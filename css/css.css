@@ -1,0 +1,8 @@
+#telalogin{
+    width: 350px;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 5px 30px rgb(195, 195, 195);
+}

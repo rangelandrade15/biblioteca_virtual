@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>pagina em branco</title>
+</head>
+<style>
+    table,
+    th,
+    td {
+        border: 1px solid black;
+        padding: 5px;
+    }
+    
+    table {
+        border-spacing: 15px;
+    }
+</style>
+
+<body>
+    <p>Atividade programação Web II!</p>
+    <center>
+        <a href="/cadastra">Cadastrar</a>
+        <fieldset style="width: 500px;">
+            <table style="width:100%">
+                <tr>
+                    <th>Id:</th>
+                    <th>Titulo:</th>
+                    <th>edição:</th>
+                    <th>Autor:</th>
+                    <th>Editora:</th>
+                    
+                </tr>
+
+
+                <% for(var l in livros){ %>
+
+                    <tr>
+                        <td>
+                            <%= livros[l]["id"] %>
+                        </td>
+                        <td>
+                            <%= livros[l]["titulo"] %>
+                        </td>
+                        <td>
+                            <%= livros[l]["edicao"] %>
+                        </td>
+                        <td>
+                            <%= livros[l]["editora"] %>
+                        </td>
+                        <td>
+                            <%= livros[l]["autor"] %>
+                        </td>
+                       
+                    </tr>
+
+                    <% } %>
+            </table>
+        </fieldset>
+    </center>
+</body>
+
+</html>
